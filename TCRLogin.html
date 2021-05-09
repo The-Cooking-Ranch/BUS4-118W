@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>The Cooking Ranch Login</title>
+        <link rel="stylesheet" type = "text/css" href="login.css">
+    </head>
+    <body>
+
+        <div class="login-page">
+            <form method = "POST" action = "cookingranch.html" class = "form">
+            <p><label>Email </label> <input type = "email" id = "email" size = "30" maxlength="30" required />    
+            <label>Username </label> <input type = "text" id = "username" size = "20" maxlength="20" required />
+            <label>Password </label> <input  type = "password" id = "password" size = "20" maxlength="20"required />
+             </label>
+                <button type= "submit" value="submit" onclick="send()">Sign Up</button>
+            </form>
+            </div>
+
+            
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script> 
+            <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#available-libraries -->
+
+            <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyBxQcdhsAWQMKXc5wzPrZwBHgyHa6uXagw",
+                authDomain: "tcr-login.firebaseapp.com",
+                projectId: "tcr-login",
+                databaseURL: "https://tcr-login-default-rtdb.firebaseio.com/",
+                storageBucket: "tcr-login.appspot.com",
+                messagingSenderId: "73812351164",
+                appId: "1:73812351164:web:2730b0dbcd4bb902ed98b9"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            </script>
+            <script>
+            // Get a reference to the database service 
+            var database = firebase.database();
+            </script>
+            </script>
+            <script src="TCRLogin.js"></script>
+    </body>
+</html>
