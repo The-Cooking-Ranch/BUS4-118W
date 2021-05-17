@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>The Cooking Ranch Login</title>
+        <link rel="stylesheet" type = "text/css" href="login.css">
+    </head>
+    <body>
+  <div class="input-page">
+            <form action = homepage.html id = "sign up"method = "POST"  class = "form">
+           
+            <div class="form-box">
+            
+            
+           <h1> Login </h1>
+                <form id="login" method="POST" action = "homepage.html" >
+                <p>
+                  
+                <label>Username </label> <input class = "email" type = "text" id = "username" size = "20" placeholder="Username" maxlength="20" required />
+                <label>Password </label> <input  type = "password" id = "password" size = "20" placeholder="Password" maxlength="20"required />
+                </label>
+                <input type= "Submit" value ="Log In">
+                
+
+            
+            <!-- Firebase login     Gmail:Thecookinranch@gmail.com
+                                    password: Sjsu_bus118w                                -->
+            
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script> 
+            <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+            <!-- TODO: Add SDKs for Firebase products that you want to use -->  
+                
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCEpreRo_fqwfcfJAuLCpDtRf1gM4nHWrI",
+            authDomain: "login-b15c9.firebaseapp.com",
+            databaseURL: "https://login-b15c9-default-rtdb.firebaseio.com",
+            projectId: "login-b15c9",
+            storageBucket: "login-b15c9.appspot.com",
+            messagingSenderId: "1002263007882",
+            appId: "1:1002263007882:web:66039de69e11e267669373"
+        };
+        
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            </script>
+            <script>
+            // Get a reference to the database service 
+            var database = firebase.database();
+            </script>
+            </script>
+            <script src="TCRLogin.js"></script>
+
+            
+    </body>
+</html>

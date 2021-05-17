@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title>The Cooking Ranch</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="cookingranch.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="cookingranch-top">
+  <div class="cookingranch-bar cookingranch-white cookingranch-padding cookingranch-card" style="letter-spacing:4px;">
+    <a href="#home" class="cookingranch-bar-item cookingranch-button">The Cooking Ranch</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="cookingranch-right cookingranch-hide-small">
+      <a href="#about" class="cookingranch-bar-item cookingranch-button">About</a>
+      <a href="Recipes_cooking_Ranch.html" class="cookingranch-bar-item cookingranch-button">Recipes</a>
+      <a href="#contact" class="cookingranch-bar-item cookingranch-button">Contact</a>
+      <a href="TCRLogin.html" class="cookingranch-bar-item cookingranch-button">Log-In</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="cookingranch-display-container cookingranch-content cookingranch-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="cookingranch-image" src="background1.png" alt="Farm To Table" width="1600" height="800">
+  <div class="cookingranch-display-bottomleft cookingranch-padding-large cookingranch-opacity">
+    <h1 class="cookingranch-xxlarge cookingranch-white">Farm To Table Fresh</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="cookingranch-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="cookingranch-row cookingranch-padding-64" id="about">
+    <div class="cookingranch-col m6 cookingranch-padding-large cookingranch-hide-small">
+     <img src="aboutus.png" class="cookingranch-round cookingranch-image cookingranch-opacity-min" alt="About Us" width="600" height="750">
+    </div>
+
+    <div class="cookingranch-col m6 cookingranch-padding-large">
+      <h1 class="cookingranch-center">About The Cooking Ranch</h1><br>
+      <h5 class="cookingranch-center">From Farm To Table</h5>
+      <p class="cookingranch-large">Healthy, hearty, and tasteful meals are one of the simple joys that many people cannot live without. 
+      There are countless food combinations, techniques, and unique cooking styles that can transform simple food ingredients into a meal. Our recipes 
+      are created to be very simple and brief so our viewers can easily cook healthy meals without complications and extra steps that will discourage them 
+      from making a desired dish. Through these simple objectives, we hope The Cooking Ranch is the next step into creating a healthier diet in local communities everywhere.</p>
+      <p class="cookingranch-large">The founders of The Cooking Ranch consist of four representatives, Alexis Conlon, Antonio Avila, Farrah Nazmi, and Karina Estrin, who all came from different 
+      backgrounds. Each of us are equally passionate about preparing healthful meals. We believe that a healthy diet plays a significant role in a more productive lifestyle and wanted to create a 
+      platform from which we could share the recipes we have discovered and tested that we believe to be very nutritious, yet simple to prepare on a day-to-day basis. In response to the current 
+      tragedies of COVID-19, our team strives to create The Cooking Ranch website to connect friends, families, and loved ones through the love of cooking.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Recipe Section -->
+  <div class="cookingranch-row cookingranch-padding-64" id="recipes">
+    <div class="cookingranch-col l6 cookingranch-padding-large">
+      <h1 class="cookingranch-center">Recipes</h1><br>
+      <h4>Grilled Veggie Skewers</h4>
+      <p class="cookingranch-text-grey">A savory summer classic.</p><br>
+    
+      <h4>Tasty Turkey Casserole</h4>
+      <p class="cookingranch-text-grey">The hearty meal you're craving, with a healthy spin.</p><br>
+    
+      <h4>Tomato Spinach Flatbread</h4>
+      <p class="cookingranch-text-grey">A fresh dish served as an appetizer or a light meal.</p><br>
+    
+      <h4>Avocado Toast</h4>
+      <p class="cookingranch-text-grey">A healthy breakfast choice made fresh</p><br>
+    
+      <h4>Blueberry Pancakes</h4>
+      <p class="cookingranch-text-grey">With syrup, butter and lots of berries</p>    
+    </div>
+    
+    <div class="cookingranch-col l6 cookingranch-padding-large">
+      <img src="food1.png" class="cookingranch-round cookingranch-image cookingranch-opacity-min" alt="Recipes" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="cookingranch-container cookingranch-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer a platform catered to incorporating high-nutrient, healthful foods towards our diets that are easily accessible to everyone. 
+    We understand your need of healthy, hearty meals and we will strive to to satisfy your cravings. Do not hesitate to contact us regarding
+    recipe requests, questions, or anything in between.</p>
+    <p class="cookingranch-text-blue-grey cookingranch-large"><b>350 South 12th Street, San Jose, CA, 95112</b></p>
+    <p>You can also contact us by phone (408) 123-8888 or email info@thecookingranch.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="cookingranch-input cookingranch-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="cookingranch-input cookingranch-padding-16" type="email" placeholder="Email" required name="Email"></p>
+      <p><input class="cookingranch-input cookingranch-padding-16" type="text" placeholder="How can we help?" required name="Message"></p>
+      <p><button class="cookingranch-button cookingranch-light-grey cookingrannch-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+
+
+  
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="cookingranch-center cookingranch-light-grey cookingranch-padding-32">
+  <p>Powered by <a href="cookingranch.css" title="CookingRanch.CSS" target="_blank" class="cookingranch-hover-text-green">cookingranch.css</a></p>
+</footer>
+
+</body>
+</html>

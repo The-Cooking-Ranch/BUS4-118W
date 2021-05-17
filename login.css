@@ -1,0 +1,96 @@
+body{
+    background-color: gray;
+}
+      
+    .form {
+    background-color:white;
+    padding: 40px;
+    
+    max-width:600px;
+    margin:40px auto;
+    box-shadow:0 4px 10px 4px rgba;
+    margin: 0 auto;
+    width:300px;
+    
+    }
+
+    h1{
+        text-align: center;
+        
+    }
+
+    .email
+    {
+     
+        color: rgba(197, 129, 2, 0.74);
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .username
+    {
+        
+        padding-left: 0px;
+        color: rgba(197, 129, 2, 0.74);
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    
+    .password
+    {
+        
+        padding-left: 0px;
+        color: rgba(197, 129, 2, 0.74);
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    
+    
+    input[type=text] {
+    background-color: #F8F8F8;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 2px;
+    }
+
+    input[type=email] {
+        background-color: #F8F8F8;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 4px;
+        text-align: center;
+        letter-spacing: 2px;
+        }
+    
+    input[type=password] {
+    background-color: #F8F8F8;
+    
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    text-align:center;
+    letter-spacing: 2px;
+    }
+    
+    input[type=button], input[type=Submit], input[type=Submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    letter-spacing: 2px;
+    }

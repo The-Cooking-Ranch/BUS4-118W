@@ -1,0 +1,660 @@
+/* Cooking Ranch CSS */
+html{
+    box-sizing:border-box}*,*:before,*:after{box-sizing:inherit
+    }
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{
+    -ms-text-size-adjust:100%;-webkit-text-size-adjust:100%
+}
+body
+{
+    margin:0
+}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{
+    display:block
+}
+summary{
+    display:list-item
+}
+audio,canvas,progress,video{
+    display:inline-block
+}
+progress{
+    vertical-align:baseline
+}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{
+    background-color:transparent
+}
+a:active,a:hover{
+    outline-width:0
+}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{
+    font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000
+    }
+small{
+    font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline
+    }
+sub{
+    bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none
+    }
+code,kbd,pre,samp{
+    font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible
+    }
+button,input,select,textarea,optgroup{
+    font:inherit;margin:0}optgroup{font-weight:bold
+    }
+button,input{
+    overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{
+    color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit
+}
+/* End extract */
+html,body{
+    font-family:Verdana,sans-serif;font-size:15px;line-height:1.5
+    }
+html{
+    overflow-x:hidden
+    }
+h1{
+    font-size:36px
+    }
+h2{
+    font-size:30px
+    }
+h3{
+    font-size:24px
+    }
+h4{
+    font-size:20px
+    }
+h5{
+    font-size:18px
+    }
+h6{
+    font-size:16px
+    }
+.cookingranch-serif{
+    font-family:serif
+    }
+.cookingranch-sans-serif{
+    font-family:sans-serif
+    }
+.cookingranch-cursive{
+    font-family:cursive
+}
+.cookingranch-monospace{
+    font-family:monospace
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0
+}
+.cookingranch-wide{
+    letter-spacing:4px
+}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.cookingranch-image{
+    max-width:100%;height:auto
+}
+img{
+    vertical-align:middle
+}a{
+    color:inherit
+}
+.cookingranch-table,.cookingranch-table-all{
+    border-collapse:collapse;border-spacing:0;width:100%;display:table
+}
+.cookingranch-table-all{
+    border:1px solid #ccc
+}
+.cookingranch-bordered tr,.cookingranch-table-all tr{
+    border-bottom:1px solid #ddd
+}
+.cookingranch-striped tbody tr:nth-child(even){
+    background-color:#f1f1f1
+}
+.cookingranch-table-all tr:nth-child(odd){
+    background-color:#fff
+}
+.cookingranch-table-all tr:nth-child(even){
+    background-color:#f1f1f1
+}
+.cookingranch-hoverable tbody tr:hover,.cookingranch-ul.cookingranch-hoverable li:hover{
+    background-color:#ccc
+}.cookingranch-centered tr th,.cookingranch-centered tr td{
+    text-align:center
+}
+.cookingranch-table td,.cookingranch-table th,.cookingranch-table-all td,.cookingranch-table-all th{
+    padding:8px 8px;display:table-cell;text-align:left;vertical-align:top
+}
+.cookingranch-table th:first-child,.cookingranch-table td:first-child,.cookingranch-table-all th:first-child,.cookingranch-table-all td:first-child{
+    padding-left:16px
+}
+.cookingranch-btn,.cookingranch-button{
+    border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap
+}
+.cookingranch-btn:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+.cookingranch-btn,.cookingranch-button{
+    -webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none
+}   
+.cookingranch-disabled,.cookingranch-btn:disabled,.cookingranch-button:disabled{
+    cursor:not-allowed;opacity:0.3
+}
+.cookingranch-disabled *,:disabled *{
+    pointer-events:none
+}
+.cookingranch-btn.cookingranch-disabled:hover,.cookingranch-btn:disabled:hover{
+    box-shadow:none
+}
+.cookingranch-badge,.cookingranch-tag{
+    background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center
+}
+.cookingranch-badge{
+    border-radius:50%
+}
+.cookingranch-ul{
+    list-style-type:none;padding:0;margin:0
+}
+.cookingranch-ul li{
+    padding:8px 16px;border-bottom:1px solid #ddd
+}
+.cookingranch-ul li:last-child{
+    border-bottom:none
+}
+.cookingranch-tooltip,.cookingranch-display-container{
+    position:relative
+}.cookingranch-tooltip .cookingranch-text{
+    display:none
+}.cookingranch-tooltip:hover .cookingranch-text{
+    display:inline-block
+}
+.cookingranch-ripple:active{
+    opacity:0.5
+}
+.cookingranch-ripple{
+    transition:opacity 0s
+}
+.cookingranch-input{
+    padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%
+}
+.cookingranch-select{
+    padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc
+}
+.cookingranch-dropdown-click,.cookingranch-dropdown-hover{
+    position:relative;display:inline-block;cursor:pointer
+}
+.cookingranch-dropdown-hover:hover .cookingranch-dropdown-content{
+    display:block
+}
+.cookingranch-dropdown-hover:first-child,.cookingranch-dropdown-click:hover{
+    background-color:#ccc;color:#000
+}
+.cookingranch-dropdown-hover:hover > .cookingranch-button:first-child,.cookingranch-dropdown-click:hover > .cookingranch-button:first-child{
+    background-color:#ccc;color:#000
+}
+.cookingranch-dropdown-content{
+    cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1
+}
+.cookingranch-check,.cookingranch-radio{
+    width:24px;height:24px;position:relative;top:6px
+}
+.cookingranch-sidebar{
+    height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto
+}
+.cookingranch-bar-block .cookingranch-dropdown-hover,.cookingranch-bar-block .cookingranch-dropdown-click{
+    width:100%
+}
+.cookingranch-bar-block .cookingranch-dropdown-hover .cookingranch-dropdown-content,.cookingranch-bar-block .cookingranch-dropdown-click .cookingranch-dropdown-content{
+    min-width:100%
+}
+.cookingranch-bar-block .cookingranch-dropdown-hover .cookingranch-button,.cookingranch-bar-block .cookingranch-dropdown-click .cookingranch-button{
+    width:100%;text-align:left;padding:8px 16px
+}
+.cookingranch-main,#main{
+    transition:margin-left .4s
+}
+.cookingranch-modal{
+    z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)
+}
+.cookingranch-modal-content{
+    margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px
+}
+.cookingranch-bar{
+    width:100%;overflow:hidden
+}
+.cookingranch-center .cookingranch-bar{
+    display:inline-block;width:auto
+}
+.cookingranch-bar .cookingranch-bar-item{
+    padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0
+}
+.cookingranch-bar .cookingranch-dropdown-hover,.cookingranch-bar .cookingranch-dropdown-click{
+    position:static;float:left
+}
+.cookingranch-bar .cookingranch-button{
+    white-space:normal
+}
+.cookingranch-bar-block .cookingranch-bar-item{
+    width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0
+}
+.cookingranch-bar-block.cookingranch-center .cookingranch-bar-item{
+    text-align:center}.cookingranch-block{display:block;width:100%
+    }
+.cookingranch-responsive{
+    display:block;overflow-x:auto
+}
+.cookingranch-container:after,.cookingranch-container:before,.cookingranch-panel:after,.cookingranch-panel:before,.cookingranch-row:after,.cookingranch-row:before,.cookingranch-row-padding:after,.cookingranch-row-padding:before,
+.cookingranch-cell-row:before,.cookingranch-cell-row:after,.cookingranch-clear:after,.cookingranch-clear:before,.cookingranch-bar:before,.cookingranch-bar:after{
+    content:"";display:table;clear:both
+}
+.cookingranch-col,.cookingranch-half,.cookingranch-third,.cookingranch-twothird,.cookingranch-threequarter,.cookingranch-quarter{
+    float:left;width:100%
+}
+.cookingranch-col.s1{
+    width:8.33333%
+}
+.cookingranch-col.s2{
+    width:16.66666%
+}
+.cookingranch-col.s3{
+    width:24.99999%
+}
+.cookingranch-col.s4{
+    width:33.33333%
+}
+.cookingranch-col.s5{
+    width:41.66666%
+}
+.cookingranch-col.s6
+{
+    width:49.99999%
+}
+.cookingranch-col.s7{
+    width:58.33333%
+}
+.cookingranch-col.s8{
+    width:66.66666%
+}
+.cookingranch-col.s9{
+    width:74.99999%
+}
+.cookingranch-col.s10{
+    width:83.33333%
+}
+.cookingranch-col.s11{
+    width:91.66666%
+}
+.cookingranch-col.s12{
+    width:99.99999%
+}
+
+@media (min-width:601px){.cookingranch-col.m1{width:8.33333%}.cookingranch-col.m2{width:16.66666%}.cookingranch-col.m3,.cookingranch-quarter{width:24.99999%}.cookingranch-col.m4,.cookingranch-third{width:33.33333%}
+.cookingranch-col.m5{width:41.66666%}.cookingranch-col.m6,.cookingranch-half{width:49.99999%}.cookingranch-col.m7{width:58.33333%}.cookingranch-col.m8,.cookingranch-twothird{width:66.66666%}
+.cookingranch-col.m9,.cookingranch-threequarter{width:74.99999%}.cookingranch-col.m10{width:83.33333%}.cookingranch-col.m11{width:91.66666%}.cookingranch-col.m12{width:99.99999%}}
+
+@media (min-width:993px){.cookingranch-col.l1{width:8.33333%}.cookingranch-col.l2{width:16.66666%}.cookingranch-col.l3{width:24.99999%}.cookingranch-col.l4{width:33.33333%}
+.cookingranch-col.l5{width:41.66666%}.cookingranch-col.l6{width:49.99999%}.cookingranch-col.l7{width:58.33333%}.cookingranch-col.l8{width:66.66666%}
+.cookingranch-col.l9{width:74.99999%}.cookingranch-col.l10{width:83.33333%}.cookingranch-col.l11{width:91.66666%}.cookingranch-col.l12{width:99.99999%}}
+.cookingranch-rest{overflow:hidden}.cookingranch-stretch{margin-left:-16px;margin-right:-16px}
+.cookingranch-content,.cookingranch-auto{margin-left:auto;margin-right:auto}.cookingranch-content{max-width:980px}.cookingranch-auto{max-width:1140px}
+.cookingranch-cell-row{display:table;width:100%}.cookingranch-cell{display:table-cell}
+.cookingranch-cell-top{vertical-align:top}.cookingranch-cell-middle{vertical-align:middle}.cookingranch-cell-bottom{vertical-align:bottom}
+.cookingranch-hide{display:none!important}.cookingranch-show-block,.cookingranch-show{display:block!important}.cookingranch-show-inline-block{display:inline-block!important}
+
+@media (max-width:1205px){.cookingranch-auto{max-width:95%}}
+
+@media (max-width:600px){.cookingranch-modal-content{margin:0 10px;width:auto!important}.cookingranch-modal{padding-top:30px}
+.cookingranch-dropdown-hover.cookingranch-mobile .cookingranch-dropdown-content,.cookingranch-dropdown-click.cookingranch-mobile .cookingranch-dropdown-content{position:relative}	
+.cookingranch-hide-small{display:none!important}.cookingranch-mobile{display:block;width:100%!important}.cookingranch-bar-item.cookingranch-mobile,.cookingranch-dropdown-hover.cookingranch-mobile,.cookingranch-dropdown-click.cookingranch-mobile{text-align:center}
+.cookingranch-dropdown-hover.cookingranch-mobile,.cookingranch-dropdown-hover.cookingranch-mobile .cookingranch-btn,.cookingranch-dropdown-hover.cookingranch-mobile .cookingranch-button,.cookingranch-dropdown-click.cookingranch-mobile,.cookingranch-dropdown-click.cookingranch-mobile .cookingranch-btn,.cookingranch-dropdown-click.cookingranch-mobile .cookingranch-button{width:100%}}
+
+@media (max-width:768px){.cookingranch-modal-content{width:500px}.cookingranch-modal{padding-top:50px}}
+@media (min-width:993px){.cookingranch-modal-content{width:900px}.cookingranch-hide-large{display:none!important}.cookingranch-sidebar.cookingranch-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.cookingranch-hide-medium{display:none!important}}
+@media (max-width:992px){.cookingranch-sidebar.cookingranch-collapse{display:none}.cookingranch-main{margin-left:0!important;margin-right:0!important}.cookingranch-auto{max-width:100%}}
+.cookingranch-top,.cookingranch-bottom{
+    position:fixed;width:100%;z-index:1
+}
+.cookingranch-top{
+    top:0;
+bottom:0
+}
+.cookingranch-overlay{
+    position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2
+}
+.cookingranch-display-topleft{
+    position:absolute;left:0;top:0
+}.cookingranch-display-topright{
+    position:absolute;right:0;top:0
+}
+.cookingranch-display-bottomleft{
+    position:absolute;left:0;bottom:0
+}
+.cookingranch-display-bottomright{
+    position:absolute;right:0;bottom:0
+}
+.cookingranch-display-middle{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)
+}
+.cookingranch-display-left{
+    position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)
+}
+.cookingranch-display-right
+{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)
+}
+.cookingranch-display-topmiddle{
+    position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)
+}
+.cookingranch-display-bottommiddle{
+    position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)
+}
+.cookingranch-display-container:hover .cookingranch-display-hover{
+    display:block
+}
+.cookingranch-display-container:hover span.cookingranch-display-hover{
+    display:inline-block
+}
+.cookingranch-display-hover{
+    display:none
+}
+.cookingranch-display-position{
+    position:absolute
+}
+.cookingranch-circle{
+    border-radius:50%
+}
+.cookingranch-round-small{
+    border-radius:2px
+}
+.cookingranch-round,.cookingranch-round-medium{
+    border-radius:4px
+}
+.cookingranch-round-large{
+    border-radius:8px
+}
+.cookingranch-round-xlarge{
+    border-radius:16px
+}
+.cookingranch-round-xxlarge{
+    border-radius:32px
+}
+.cookingranch-row-padding,.cookingranch-row-padding>.cookingranch-half,.cookingranch-row-padding>.cookingranch-third,.cookingranch-row-padding>.cookingranch-twothird,.cookingranch-row-padding>.cookingranch-threequarter,.cookingranch-row-padding>.cookingranch-quarter,.cookingranch-row-padding>.cookingranch-col{
+    padding:0 8px
+}
+.cookingranch-container,.cookingranch-panel{
+    padding:0.01em 16px
+}
+.cookingranch-panel{
+    margin-top:16px;margin-bottom:16px
+}
+.cookingranch-code,.cookingranch-codespan{
+    font-family:Consolas,"courier new";font-size:16px
+}
+.cookingranch-code{
+    width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word
+}
+.cookingranch-codespan{
+    color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%
+}
+.cookingranch-card,.cookingranch-card-2{
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+}
+.cookingranch-card-4,.cookingranch-hover-shadow:hover{
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+.cookingranch-spin{
+    animation:cookingranch-spin 2s infinite linear}@keyframes cookingranch-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.cookingranch-animate-fading{
+    animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.cookingranch-animate-opacity
+{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.cookingranch-animate-top{
+    position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.cookingranch-animate-left{
+    position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.cookingranch-animate-right{
+    position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.cookingranch-animate-bottom{
+    position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.cookingranch-animate-zoom {
+    animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.cookingranch-animate-input{
+    transition:width 0.4s ease-in-out
+}
+.cookingranch-animate-input:focus{width:100%!important
+}
+.cookingranch-opacity,.cookingranch-hover-opacity:hover{
+    opacity:0.60
+}
+.cookingranch-opacity-off,.cookingranch-hover-opacity-off:hover{
+    opacity:1
+}
+.cookingranch-opacity-max{
+    opacity:0.25
+}
+.cookingranch-opacity-min{
+    opacity:0.75
+}
+.cookingranch-greyscale-max,.cookingranch-grayscale-max,.cookingranch-hover-greyscale:hover,.cookingranch-hover-grayscale:hover{filter:grayscale(100%)}
+.cookingranch-greyscale,.cookingranch-grayscale{filter:grayscale(75%)}.cookingranch-greyscale-min,.cookingranch-grayscale-min{filter:grayscale(50%)}
+.cookingranch-sepia{filter:sepia(75%)}.cookingranch-sepia-max,.cookingranch-hover-sepia:hover{filter:sepia(100%)}.cookingranch-sepia-min{filter:sepia(50%)}
+.cookingranch-tiny{font-size:10px!important}.cookingranch-small{font-size:12px!important}.cookingranch-medium{font-size:15px!important}.cookingranch-large{font-size:18px!important}
+.cookingranch-xlarge{
+    font-size:24px!important
+}
+.cookingranch-xxlarge{
+    font-size:36px!important
+}
+.cookingranch-xxxlarge{
+    font-size:48px!important
+}
+.cookingranch-jumbo{
+    font-size:64px!important
+}
+.cookingranch-left-align{
+    text-align:left!important
+}
+.cookingranch-right-align{
+    text-align:right!important
+}
+.cookingranch-justify{
+    text-align:justify!important
+}
+.cookingranch-center{
+    text-align:center!important
+}
+.cookingranch-border-0{
+    border:0!important
+}
+.cookingranch-border{
+    border:1px solid #ccc!important
+}
+.cookingranch-border-top{
+    border-top:1px solid #ccc!important
+}
+.cookingranch-border-bottom{
+    border-bottom:1px solid #ccc!important
+}
+.cookingranch-border-left{
+    border-left:1px solid #ccc!important
+}
+.cookingranch-border-right{
+    border-right:1px solid #ccc!important
+}
+.cookingranch-topbar{
+    border-top:6px solid #ccc!important
+}
+.cookingranch-bottombar{
+    border-bottom:6px solid #ccc!important
+}
+.cookingranch-leftbar{
+    border-left:6px solid #ccc!important
+}
+.cookingranch-rightbar{
+    border-right:6px solid #ccc!important
+}
+.cookingranch-section,.cookingranch-code{
+    margin-top:16px!important;margin-bottom:16px!important
+}
+.cookingranch-margin{
+    margin:16px!important
+}.cookingranch-margin-top{
+    margin-top:20px!important
+}
+.cookingranch-margin-bottom{
+    margin-bottom:16px!important
+}
+.cookingranch-margin-left{
+    margin-left:16px!important
+}
+.cookingranch-margin-right{
+    margin-right:16px!important
+}
+.cookingranch-padding-small{
+    padding:4px 8px!important
+}
+.cookingranch-padding{
+    padding:8px 16px!important
+}
+.cookingranch-padding-large{
+    padding:12px 24px!important
+}
+.cookingranch-padding-16{
+    padding-top:16px!important;padding-bottom:16px!important
+}
+.cookingranch-padding-24{
+    padding-top:24px!important;padding-bottom:24px!important
+}
+.cookingranch-padding-32{
+    padding-top:32px!important;padding-bottom:32px!important
+}
+.cookingranch-padding-48{
+    padding-top:48px!important;padding-bottom:48px!important
+}
+.cookingranch-padding-64{
+    padding-top:64px!important;padding-bottom:64px!important
+}
+.cookingranch-padding-top-64{
+    padding-top:64px!important
+}
+.cookingranch-padding-top-48{
+    padding-top:48px!important
+}
+.cookingranch-padding-top-32{
+    padding-top:32px!important
+}
+.cookingranch-padding-top-24{
+    padding-top:24px!important
+}
+.cookingranch-left{
+    float:left!important
+}
+.cookingranch-right{
+    float:right!important
+}
+.cookingranch-button:hover{
+    color:#000!important;background-color:#ccc!important
+}
+.cookingranch-transparent,.cookingranch-hover-none:hover{
+    background-color:transparent!important
+}
+.cookingranch-hover-none:hover{
+    box-shadow:none!important
+}
+/* Colors */
+.cookingranch-amber,.cookingranch-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.cookingranch-aqua,.cookingranch-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.cookingranch-blue,.cookingranch-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.cookingranch-light-blue,.cookingranch-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.cookingranch-brown,.cookingranch-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.cookingranch-cyan,.cookingranch-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.cookingranch-blue-grey,.cookingranch-hover-blue-grey:hover,.cookingranch-blue-gray,.cookingranch-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.cookingranch-green,.cookingranch-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.cookingranch-light-green,.cookingranch-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.cookingranch-indigo,.cookingranch-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.cookingranch-khaki,.cookingranch-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.cookingranch-lime,.cookingranch-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.cookingranch-orange,.cookingranch-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.cookingranch-deep-orange,.cookingranch-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.cookingranch-pink,.cookingranch-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.cookingranch-purple,.cookingranch-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.cookingranch-deep-purple,.cookingranch-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.cookingranch-red,.cookingranch-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.cookingranch-sand,.cookingranch-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.cookingranch-teal,.cookingranch-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.cookingranch-yellow,.cookingranch-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.cookingranch-white,.cookingranch-hover-white:hover{color:#000!important;background-color:#fff!important}
+.cookingranch-black,.cookingranch-hover-black:hover{color:#fff!important;background-color:#000!important}
+.cookingranch-grey,.cookingranch-hover-grey:hover,.cookingranch-gray,.cookingranch-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.cookingranch-light-grey,.cookingranch-hover-light-grey:hover,.cookingranch-light-gray,.cookingranch-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.cookingranch-dark-grey,.cookingranch-hover-dark-grey:hover,.cookingranch-dark-gray,.cookingranch-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.cookingranch-pale-red,.cookingranch-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.cookingranch-pale-green,.cookingranch-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.cookingranch-pale-yellow,.cookingranch-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.cookingranch-pale-blue,.cookingranch-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.cookingranch-text-amber,.cookingranch-hover-text-amber:hover{color:#ffc107!important}
+.cookingranch-text-aqua,.cookingranch-hover-text-aqua:hover{color:#00ffff!important}
+.cookingranch-text-blue,.cookingranch-hover-text-blue:hover{color:#2196F3!important}
+.cookingranch-text-light-blue,.cookingranch-hover-text-light-blue:hover{color:#87CEEB!important}
+.cookingranch-text-brown,.cookingranch-hover-text-brown:hover{color:#795548!important}
+.cookingranch-text-cyan,.cookingranch-hover-text-cyan:hover{color:#00bcd4!important}
+.cookingranch-text-blue-grey,.cookingranch-hover-text-blue-grey:hover,.cookingranch-text-blue-gray,.cookingranch-hover-text-blue-gray:hover{color:#607d8b!important}
+.cookingranch-text-green,.cookingranch-hover-text-green:hover{color:#4CAF50!important}
+.cookingranch-text-light-green,.cookingranch-hover-text-light-green:hover{color:#8bc34a!important}
+.cookingranch-text-indigo,.cookingranch-hover-text-indigo:hover{color:#3f51b5!important}
+.cookingranch-text-khaki,.cookingranch-hover-text-khaki:hover{color:#b4aa50!important}
+.cookingranch-text-lime,.cookingranch-hover-text-lime:hover{color:#cddc39!important}
+.cookingranch-text-orange,.cookingranch-hover-text-orange:hover{color:#ff9800!important}
+.cookingranch-text-deep-orange,.cookingranch-hover-text-deep-orange:hover{color:#ff5722!important}
+.cookingranch-text-pink,.cookingranch-hover-text-pink:hover{color:#e91e63!important}
+.cookingranch-text-purple,.cookingranch-hover-text-purple:hover{color:#9c27b0!important}
+.cookingranch-text-deep-purple,.cookingranch-hover-text-deep-purple:hover{color:#673ab7!important}
+.cookingranch-text-red,.cookingranch-hover-text-red:hover{color:#f44336!important}
+.cookingranch-text-sand,.cookingranch-hover-text-sand:hover{color:#fdf5e6!important}
+.cookingranch-text-teal,.cookingranch-hover-text-teal:hover{color:#009688!important}
+.cookingranch-text-yellow,.cookingranch-hover-text-yellow:hover{color:#d2be0e!important}
+.cookingranch-text-white,.cookingranch-hover-text-white:hover{color:#fff!important}
+.cookingranch-text-black,.cookingranch-hover-text-black:hover{color:#000!important}
+.cookingranch-text-grey,.cookingranch-hover-text-grey:hover,.cookingranch-text-gray,.cookingranch-hover-text-gray:hover{color:#757575!important}
+.cookingranch-text-light-grey,.cookingranch-hover-text-light-grey:hover,.cookingranch-text-light-gray,.cookingranch-hover-text-light-gray:hover{color:#f1f1f1!important}
+.cookingranch-text-dark-grey,.cookingranch-hover-text-dark-grey:hover,.cookingranch-text-dark-gray,.cookingranch-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.cookingranch-border-amber,.cookingranch-hover-border-amber:hover{border-color:#ffc107!important}
+.cookingranch-border-aqua,.cookingranch-hover-border-aqua:hover{border-color:#00ffff!important}
+.cookingranch-border-blue,.cookingranch-hover-border-blue:hover{border-color:#2196F3!important}
+.cookingranch-border-light-blue,.cookingranch-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.cookingranch-border-brown,.cookingranch-hover-border-brown:hover{border-color:#795548!important}
+.cookingranch-border-cyan,.cookingranch-hover-border-cyan:hover{border-color:#00bcd4!important}
+.cookingranch-border-blue-grey,.cookingranch-hover-border-blue-grey:hover,.cookingranch-border-blue-gray,.cookingranch-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.cookingranch-border-green,.cookingranch-hover-border-green:hover{border-color:#4CAF50!important}
+.cookingranch-border-light-green,.cookingranch-hover-border-light-green:hover{border-color:#8bc34a!important}
+.cookingranch-border-indigo,.cookingranch-hover-border-indigo:hover{border-color:#3f51b5!important}
+.cookingranch-border-khaki,.cookingranch-hover-border-khaki:hover{border-color:#f0e68c!important}
+.cookingranch-border-lime,.cookingranch-hover-border-lime:hover{border-color:#cddc39!important}
+.cookingranch-border-orange,.cookingranch-hover-border-orange:hover{border-color:#ff9800!important}
+.cookingranch-border-deep-orange,.cookingranch-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.cookingranch-border-pink,.cookingranch-hover-border-pink:hover{border-color:#e91e63!important}
+.cookingranch-border-purple,.cookingranch-hover-border-purple:hover{border-color:#9c27b0!important}
+.cookingranch-border-deep-purple,.cookingranch-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.cookingranch-border-red,.cookingranch-hover-border-red:hover{border-color:#f44336!important}
+.cookingranch-border-sand,.cookingranch-hover-border-sand:hover{border-color:#fdf5e6!important}
+.cookingranch-border-teal,.cookingranch-hover-border-teal:hover{border-color:#009688!important}
+.cookingranch-border-yellow,.cookingranch-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.cookingranch-border-white,.cookingranch-hover-border-white:hover{border-color:#fff!important}
+.cookingranch-border-black,.cookingranch-hover-border-black:hover{border-color:#000!important}
+.cookingranch-border-grey,.cookingranch-hover-border-grey:hover,.cookingranch-border-gray,.cookingranch-hover-border-gray:hover{border-color:#9e9e9e!important}
+.cookingranch-border-light-grey,.cookingranch-hover-border-light-grey:hover,.cookingranch-border-light-gray,.cookingranch-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.cookingranch-border-dark-grey,.cookingranch-hover-border-dark-grey:hover,.cookingranch-border-dark-gray,.cookingranch-hover-border-dark-gray:hover{border-color:#616161!important}
+.cookingranch-border-pale-red,.cookingranch-hover-border-pale-red:hover{border-color:#ffe7e7!important}.cookingranch-border-pale-green,.cookingranch-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.cookingranch-border-pale-yellow,.cookingranch-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.cookingranch-border-pale-blue,.cookingranch-hover-border-pale-blue:hover{border-color:#e7ffff!important}
