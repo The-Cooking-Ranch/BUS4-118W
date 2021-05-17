@@ -7,8 +7,14 @@
     </head>
     <body>
 
-        <div class="login-page">
-            <form method = "POST" action = "cookingranch.html" class = "form">
+        <div class="input-page">
+            <form id = "sign up"method = "POST" action = "cookingranch.html" class = "form">
+            <button type="button" class="toggle-btn" onclick = "login()">Log In</button>
+            <button type="button" class="toggle-btn">Sign Up</button>
+            <div class="form-box">
+            
+            <div id="signup">   
+            <h1>Sign Up for Free</h1>
             <p><label>Email </label> <input type = "email" id = "email" size = "30" maxlength="30" required />    
             <label>Username </label> <input type = "text" id = "username" size = "20" maxlength="20" required />
             <label>Password </label> <input  type = "password" id = "password" size = "20" maxlength="20"required />
@@ -16,6 +22,18 @@
                 <button type= "submit" value="submit" onclick="send()">Sign Up</button>
             </form>
             </div>
+
+            <div  class = "input-page"></div>
+                <h1>Already Have an Account?</h1>
+                
+                <form id="login" method="POST" action = "cookingranch.html" class = "form">
+                <p>
+                <label>Email </label> <input type = "email" id = "email" size = "30" maxlength="30" required />    
+                <label>Username </label> <input type = "text" id = "username" size = "20" maxlength="20" required />
+                <label>Password </label> <input  type = "password" id = "password" size = "20" maxlength="20"required />
+                </label>
+                <button name = "login" type="submit">Login</button>
+                
 
             
             <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -37,6 +55,7 @@
                 messagingSenderId: "73812351164",
                 appId: "1:73812351164:web:2730b0dbcd4bb902ed98b9"
             };
+
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
             </script>
@@ -46,5 +65,7 @@
             </script>
             </script>
             <script src="TCRLogin.js"></script>
+
+            
     </body>
 </html>
